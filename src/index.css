@@ -1,0 +1,111 @@
+/* Global CSS Design System - Modern Academic SaaS Theme
+   Palette: Navy Blue (#0f172a, #1e293b, #1e3a8a), Crisp White (#ffffff, #f8fafc), Subtle Cyan (#06b6d4, #0891b2, #e0f2fe)
+*/
+
+:root {
+  /* Navy Blue Core */
+  --navy-950: #0a0f1d;
+  --navy-900: #0f172a;
+  --navy-800: #1e293b;
+  --navy-700: #334155;
+  --navy-600: #475569;
+  --navy-primary: #1e3a8a;
+  --navy-hover: #172554;
+  --navy-light: #eff6ff;
+
+  /* Subtle Cyan Accents */
+  --cyan-500: #06b6d4;
+  --cyan-600: #0891b2;
+  --cyan-700: #0e7490;
+  --cyan-light: #ecfeff;
+  --cyan-border: #a5f3fc;
+  --cyan-glow: rgba(6, 182, 212, 0.15);
+
+  /* Surface & Background */
+  --bg-body: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-sidebar: #0f172a;
+  --bg-sidebar-hover: #1e293b;
+  --bg-sidebar-active: #1e3a8a;
+
+  /* Text & Typography */
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --text-light: #94a3b8;
+  --text-inverse: #ffffff;
+
+  /* Borders & Dividers */
+  --border-light: #e2e8f0;
+  --border-subtle: #f1f5f9;
+  --border-sidebar: #1e293b;
+
+  /* Status Colors */
+  --status-success: #10b981;
+  --status-success-bg: #ecfdf5;
+  --status-warning: #f59e0b;
+  --status-warning-bg: #fffbeb;
+  --status-danger: #ef4444;
+  --status-danger-bg: #fef2f2;
+  --status-info: #0284c7;
+  --status-info-bg: #f0f9ff;
+
+  /* Geometry & Shadows */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+
+  --shadow-xs: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
+  --shadow-sm: 0 1px 3px 0 rgba(15, 23, 42, 0.08), 0 1px 2px -1px rgba(15, 23, 42, 0.08);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.08);
+
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--cyan-600);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
